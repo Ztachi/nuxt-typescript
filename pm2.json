@@ -1,0 +1,18 @@
+{
+    "apps": [{
+        "name": "puxinOnlineSSR",
+        "script": "server/index.js",
+        "args": ["-i", "max"],
+        "node_args": "--harmony",
+        "merge_logs": true,
+        "cwd": "./",
+        "log": "./logs/combined.outerr.log",
+        "output": "./logs/out.log",
+        "error": "./logs/err.log",
+        "log_date_format": "YYYY-MM-DD HH:mm:ss",
+        "env": {
+            "NODE_ENV": "production",
+            "PORT": 3000
+        }
+    }]
+}

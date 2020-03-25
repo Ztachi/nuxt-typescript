@@ -13,6 +13,7 @@ class exampleClass extends VuexModule {
     //state
     wheels: number = 2
     events: any[] = [];
+    banner:any[]=[];
     //getters
     get axles() {
         return this.wheels / 2
@@ -21,6 +22,11 @@ class exampleClass extends VuexModule {
     @Mutation
     incrWheels(extra: number) {
         this.wheels += extra
+    }
+    //mutations
+    @Mutation
+    setBanner(data:any[]) {
+        this.banner=data;
     }
 
     @Action({ commit: 'incrWheels' })

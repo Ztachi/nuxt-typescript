@@ -1,8 +1,8 @@
-const head = require('./information/head');
-const manifest = require('./config/manifest');
-const loaders = require('./config/loaders');
 const TerserPlugin = require('terser-webpack-plugin');
-const fa = require('./libs/formatArgv');
+import head from './information/head';
+import manifest from './config/manifest';
+import loaders from './config/loaders';
+import fa from './libs/formatArgv';
 const mode = fa(process.argv).mode;
 const envName = mode ? '.env.' + mode : '.env';
 //当前process.env.XXX
@@ -10,7 +10,7 @@ require('dotenv').config({
     path: envName
 });
 
-const productionPlugins=[];
+const productionPlugins = [];
 if (process.env.NODE_ENV === 'production') {
     productionPlugins.push(new TerserPlugin({
         terserOptions: {
@@ -50,9 +50,10 @@ module.exports = {
      ** Plugins to load before mounting the App
      */
     plugins: [
-        '@/plugins/element-ui',
-        '@/plugins/axios',
-        '@/plugins/main',
+        '@/plugins/element-ui.ts',
+        '@/plugins/axios.ts',
+        '@/plugins/main.ts',
+        '@/plugins/hooks.ts',
     ],
     /*
      ** Nuxt.js dev-modules
@@ -80,7 +81,7 @@ module.exports = {
         ]
     },
     //配置服务器端中间件
-    serverMiddleware: ['@/middleware/serve',
+    serverMiddleware: ['@/middleware/serve.ts',
         //  {
         //     path: '/api',
         //     handler: '~/api/index.js'
@@ -112,9 +113,9 @@ module.exports = {
         /*
          ** You can extend webpack config here
          */
-        extend(config, ctx) {},
+        extend(config: any, ctx: any) { },
         loaders,
-        plugins:[
+        plugins: [
             ...productionPlugins
         ]
     }

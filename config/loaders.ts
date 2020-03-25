@@ -3,9 +3,9 @@
  * @Date: 2019-04-27 17:12:41 
  * @Description: 配置loaders
  * @Last Modified by: 詹真琦(legendryztachi@gmail.com)
- * @Last Modified time: 2020-03-17 10:29:31
+ * @Last Modified time: 2020-03-25 15:30:33
  */
-module.exports = {
+export default {
     file: {},
     fontUrl: {
         limit: 1000

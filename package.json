@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {
     "serve": "nuxt-ts",
-    "build": "nuxt-ts build",
+    "build": "nuxt-ts build --mode=official",
     "start": "nuxt-ts start",
     "generate": "nuxt-ts generate --mode=official"
   },

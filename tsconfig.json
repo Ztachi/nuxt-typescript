@@ -4,6 +4,8 @@
         "target": "es2018",
         "module": "esnext",
         "moduleResolution": "node",
+        "outDir": "declare",
+        "declaration": true,
         "lib": [
             "esnext",
             "esnext.asynciterable",
