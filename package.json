@@ -1,0 +1,38 @@
+{
+  "name": "homepagepc",
+  "version": "1.0.0",
+  "description": "homePage for pc",
+  "author": "ztachi",
+  "private": true,
+  "scripts": {
+    "serve": "nuxt-ts",
+    "build": "nuxt-ts build",
+    "start": "nuxt-ts start",
+    "generate": "nuxt-ts generate --mode=official"
+  },
+  "dependencies": {
+    "@nuxt/typescript-runtime": "^0.4.0",
+    "@nuxtjs/axios": "^5.3.6",
+    "@nuxtjs/pwa": "^3.0.0-0",
+    "cross-env": "^5.2.0",
+    "element-ui": "^2.4.11",
+    "koa": "^2.6.2",
+    "nuxt": "^2.0.0",
+    "vue-color": "^2.7.1",
+    "vuescroll": "^4.15.0",
+    "@nuxtjs/dotenv": "^1.4.0",
+    "vue-property-decorator": "^8.4.0",
+    "vuex-class": "^0.3.2"
+  },
+  "devDependencies": {
+    "@nuxt/typescript-build": "^0.6.0",
+    "@nuxtjs/style-resources": "^1.0.0",
+    "dotenv": "^8.2.0",
+    "element-theme-chalk": "^2.13.0",
+    "node-sass": "^4.13.1",
+    "nodemon": "^1.18.9",
+    "sass-loader": "^8.0.2",
+    "terser-webpack-plugin": "^2.3.5",
+    "vuex-module-decorators": "^0.16.1"
+  }
+}

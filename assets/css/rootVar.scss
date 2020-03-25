@@ -1,0 +1,15 @@
+
+:root {
+    --primary-color: #c5a8db; //主题色
+
+    //熊相关hsla颜色----------
+    --bear-color-h: 15;
+    --bear-color-s: 54%;
+    --bear-color-l: 24%;
+    --bear-color-a: 1;
+    --bear-color: hsla(var(--bear-color-h), var(--bear-color-s), var(--bear-color-l), var(--bear-color-a)); //熊色
+    --bear-color-light: hsla(var(--bear-color-h), var(--bear-color-s), calc(var(--bear-color-l) * 1.3), var(--bear-color-a)); //亮色熊
+    --bear-color-highLight: hsla(var(--bear-color-h), var(--bear-color-s), calc(var(--bear-color-l) * 2), var(--bear-color-a)); //亮色熊
+    --bear-black: hsla(0, 0%, 0%, var(--bear-color-a));
+    //----------熊相关hsla颜色
+}
