@@ -51,19 +51,19 @@
 <br>
 
 # 目录介绍
-- assets: 存放开发过程中使用的静态资源
-- components: vue组件目录
-- declare: 全局声明目录
-- interface: 存放接口目录
-- layouts: 页面基础布局目录
-- libs: 存放自定义库的目录
-- logs: 存放日志的目录
-- middleware: 存放中间件的目录
-- plugins: 存放插件配置、引入的目录
-- server: 存放服务器配置的目录
-- static: 存放静态资源的目录
-- store: 存放vuex的目录
+- **assets**: 存放开发过程中使用的静态资源
+- **components**: vue组件目录
+- **declare**: 全局声明目录
+- **interface**: 存放接口目录
+- **layouts**: 页面基础布局目录
+- **libs**: 存放自定义库的目录
+- **logs**: 存放日志的目录
+- **middleware**: 存放中间件的目录
+- **plugins**: 存放插件配置、引入的目录
+- **server**: 存放服务器配置的目录
+- **static**: 存放静态资源的目录
+- **store**: 存放vuex的目录
 
 # 发布文件介绍
-- .env.official: 执行```npm run build```的时候会使用此文件里面配置的环境变量。
-- pm2.json: 执行```pm2 start pm2.json```启动服务器的时候会使用里面的配置（比如端口号）。
+- **.env.official**: 执行```npm run build```的时候会使用此文件里面配置的环境变量。
+- **pm2.json**: 执行```pm2 start pm2.json```启动服务器的时候会使用里面的配置（比如端口号）。
