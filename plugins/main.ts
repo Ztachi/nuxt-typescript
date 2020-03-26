@@ -3,13 +3,13 @@
  * @Date: 2019-06-01 11:37:58 
  * @Description: vue项目全局的一些配置
  * @Last Modified by: 詹真琦(legendryztachi@gmail.com)
- * @Last Modified time: 2020-03-25 17:41:50
+ * @Last Modified time: 2020-03-26 11:12:38
  */
-import {ctx} from '../interface/common';
+import {Ctx} from '../interface/common';
 
 export default ({
     app
-}: ctx) => {
+}: Ctx) => {
 
     app.router.beforeEach((to: any, from: any, next: any) => {
         next();

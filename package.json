@@ -7,6 +7,7 @@
   "scripts": {
     "serve": "nuxt-ts",
     "build": "nuxt-ts build --mode=official",
+    "build.test": "nuxt-ts build --mode=test",
     "start": "nuxt-ts start",
     "generate": "nuxt-ts generate --mode=official"
   },

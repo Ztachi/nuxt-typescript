@@ -21,7 +21,9 @@
 </template>
 
 <script lang="ts">
-    import {asyncData,fetchData} from '@/interface/common';
+    import {
+        AsyncData
+    } from '@/interface/common';
     import {
         Component,
         Vue,
@@ -46,7 +48,7 @@
             store,
             query,
             $axios
-        }:asyncData) {
+        }: AsyncData) {
             const {
                 data: {
                     data: d
@@ -62,7 +64,7 @@
             store,
             params,
             $axios
-        }:fetchData) {
+        }: AsyncData) {
             return $axios.get('http://www.puxinonline.com/api/course/index/getBanner').then(({
                 data: d
             }) => {

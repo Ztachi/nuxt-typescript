@@ -2,12 +2,13 @@
 朴新在线PC学生端官网
 
 # 描述
-朴新在线PC学生端官网服务器端渲染版本。以nuxt为前端基本框架，elementUI为UI框架。koa为服务器端框架，pm2进程守护
+朴新在线PC学生端官网服务器端渲染版本。以nuxt为前端基本框架，elementUI为UI框架。koa为服务器端框架，pm2进程守护，脚本由typescript(javascript超集)编写。
 
 # 安装
 1. 安装nodejs。（推荐安装nodejs**[12.16.1](https://nodejs.org/download/release/v12.16.1/)**版本）
 1. 安装使用[淘宝镜像:cnpm](https://developer.aliyun.com/mirror/NPM?from=tnpm)。
 1. 安装pm2: ```cnpm i pm2 -g```
+1. 安装ts: ```cnpm i typescript -g```
 1. clone项目，进入项目目录。
 1. 执行 ```cnpm i```
 
@@ -50,7 +51,19 @@
 <br>
 
 # 目录介绍
-- 
-- 
-- 
-- 
+- assets: 存放开发过程中使用的静态资源
+- components: vue组件目录
+- declare: 全局声明目录
+- interface: 存放接口目录
+- layouts: 页面基础布局目录
+- libs: 存放自定义库的目录
+- logs: 存放日志的目录
+- middleware: 存放中间件的目录
+- plugins: 存放插件配置、引入的目录
+- server: 存放服务器配置的目录
+- static: 存放静态资源的目录
+- store: 存放vuex的目录
+
+# 发布文件介绍
+- .env.official: 执行```npm run build```的时候会使用此文件里面配置的环境变量。
+- pm2.json: 执行```pm2 start pm2.json```启动服务器的时候会使用里面的配置（比如端口号）。

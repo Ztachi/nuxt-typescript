@@ -1,7 +1,7 @@
-const TerserPlugin = require('terser-webpack-plugin');
-import head from './information/head';
-import manifest from './config/manifest';
-import loaders from './config/loaders';
+import TerserPlugin from 'terser-webpack-plugin';
+import head from './head';
+import manifest from './manifest';
+import loaders from './loaders';
 import fa from './libs/formatArgv';
 const mode = fa(process.argv).mode;
 const envName = mode ? '.env.' + mode : '.env';

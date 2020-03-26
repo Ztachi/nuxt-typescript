@@ -3,7 +3,7 @@
  * @Date: 2019-04-27 16:32:46 
  * @Description: 设置头部信息
  * @Last Modified by: 詹真琦(legendryztachi@gmail.com)
- * @Last Modified time: 2020-03-25 15:30:06
+ * @Last Modified time: 2020-03-26 11:21:40
  */
 export default {
     title: '朴新在线',
