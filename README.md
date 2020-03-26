@@ -5,7 +5,7 @@
 朴新在线PC学生端官网服务器端渲染版本。以nuxt为前端基本框架，elementUI为UI框架。koa为服务器端框架，pm2进程守护，脚本由typescript(javascript超集)编写。
 
 # 安装
-1. 安装nodejs。（推荐安装nodejs**[12.16.1](https://nodejs.org/download/release/v12.16.1/)**版本）
+1. 安装nodejs。（推荐安装nodejs **[12.16.1](https://nodejs.org/download/release/v12.16.1/)** 版本）
 1. 安装使用[淘宝镜像:cnpm](https://developer.aliyun.com/mirror/NPM?from=tnpm)。
 1. 安装pm2: ```cnpm i pm2 -g```
 1. 安装ts: ```cnpm i typescript -g```
