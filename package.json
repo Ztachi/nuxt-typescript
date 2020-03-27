@@ -9,20 +9,22 @@
     "build": "nuxt-ts build --mode=official",
     "build.test": "nuxt-ts build --mode=test",
     "start": "nuxt-ts start",
-    "generate": "nuxt-ts generate --mode=official"
+    "generate": "nuxt-ts generate --mode=official",
+    "analyze": "nuxt-ts build --mode=official --analyze"
   },
   "dependencies": {
     "@nuxt/typescript-runtime": "^0.4.0",
     "@nuxtjs/axios": "^5.3.6",
+    "@nuxtjs/dotenv": "^1.4.0",
     "@nuxtjs/pwa": "^3.0.0-0",
     "cross-env": "^5.2.0",
     "element-ui": "^2.4.11",
+    "express-useragent": "^1.0.13",
     "koa": "^2.6.2",
     "nuxt": "^2.0.0",
     "vue-color": "^2.7.1",
-    "vuescroll": "^4.15.0",
-    "@nuxtjs/dotenv": "^1.4.0",
     "vue-property-decorator": "^8.4.0",
+    "vuescroll": "^4.15.0",
     "vuex-class": "^0.3.2"
   },
   "devDependencies": {

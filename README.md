@@ -5,7 +5,7 @@
 朴新在线PC学生端官网服务器端渲染版本。以nuxt为前端基本框架，elementUI为UI框架。koa为服务器端框架，pm2进程守护，脚本由typescript(javascript超集)编写。
 
 # 安装
-1. 安装nodejs。（推荐安装nodejs **[12.16.1](https://nodejs.org/download/release/v12.16.1/)** 版本）
+1. 安装nodejs。（推荐安装nodejs **[12.16.1](https://nodejs.org/download/release/v12.16.1/)** 版本。推荐使用 **[nvm](https://github.com/nvm-sh/nvm)** 安装管理多个nodejs版本）
 1. 安装使用[淘宝镜像:cnpm](https://developer.aliyun.com/mirror/NPM?from=tnpm)。
 1. 安装pm2: ```cnpm i pm2 -g```
 1. 安装ts: ```cnpm i typescript -g```
@@ -16,7 +16,8 @@
 - ```npm run serve```: 启动一个热加载的Web服务器（开发模式）
 - ```npm run build```: 利用webpack编译应用，压缩JS和CSS资源（发布用）
 - ```npm run start```: 以生产模式启动一个Web服务器 (需要先执行nuxt build)
-- ```nuxt generate```: 编译应用，并依据路由配置生成对应的HTML文件 (用于静态站点的部署)。
+- ```npm run generate```: 编译应用，并依据路由配置生成对应的HTML文件 (用于静态站点的部署)。
+- ```npm run analyze```: 启动webpack打包分析
 
 # 发布上线
 1. 先编译应用： ```npm run build```
@@ -63,6 +64,7 @@
 - **server**: 存放服务器配置的目录
 - **static**: 存放静态资源的目录
 - **store**: 存放vuex的目录
+- **nuxtConfig**: 存放nuxt.config.js一些配置的目录
 
 # 发布文件介绍
 - **.env.official**: 执行```npm run build```的时候会使用此文件里面配置的环境变量。

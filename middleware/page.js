@@ -3,15 +3,12 @@
  * @Date: 2019-04-27 15:40:51 
  * @Description: 页面间中间件
  * @Last Modified by: 詹真琦(legendryztachi@gmail.com)
- * @Last Modified time: 2020-03-25 17:55:18
+ * @Last Modified time: 2020-03-27 10:30:15
  */
-import { Middleware } from '@nuxt/types';
-
-const myMiddleware: Middleware = ({
+export default ({
     store,
-    res
+    redirect
 }) => {
-  // 使用 context
+    // 使用 context
+    console.log('pageMiddleware:',  store.state.modules.example.wheels);
 };
-
-export default myMiddleware;

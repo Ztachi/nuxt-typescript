@@ -12,7 +12,8 @@
         "log_date_format": "YYYY-MM-DD HH:mm:ss",
         "env": {
             "NODE_ENV": "production",
-            "PORT": 3000
+            "PORT": 3001,
+            "HOST":"127.0.0.1"
         }
     }]
 }

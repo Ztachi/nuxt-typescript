@@ -5,7 +5,7 @@
  * @Last Modified by: 詹真琦(legendryztachi@gmail.com)
  * @Last Modified time: 2020-03-26 11:21:40
  */
-export default {
+module.exports = {
     title: '朴新在线',
     meta: [{
         charset: 'utf-8'

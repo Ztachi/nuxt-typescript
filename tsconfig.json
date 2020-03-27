@@ -1,10 +1,11 @@
 {
+    "watch": true,
     "compilerOptions": {
         "skipLibCheck": true,
         "target": "es2018",
         "module": "esnext",
         "moduleResolution": "node",
-        "outDir": "declare",
+        "outDir": "./location",
         "declaration": true,
         "lib": [
             "esnext",
