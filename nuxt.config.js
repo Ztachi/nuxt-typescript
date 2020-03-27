@@ -66,6 +66,7 @@ module.exports = {
         '@/plugins/axios.ts',
         '@/plugins/main.ts',
         '@/plugins/hooks.ts',
+        '@/plugins/vuescroll.ts',
     ],
     /*
      ** Nuxt.js dev-modules
