@@ -18,7 +18,7 @@ module.exports = {
         // iconSrc: '@/static/pwa'
     },
     manifest: {
-        name: '朴新在线',
+        name: 'nuxt服务器端渲染基础架构',
         lang: 'zh-CN'
     }
 };

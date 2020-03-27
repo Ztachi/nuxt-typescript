@@ -1,6 +1,6 @@
 {
     "apps": [{
-        "name": "puxinOnlineSSR",
+        "name": "homePagePC",
         "script": "server/index.js",
         "args": ["-i", "max"],
         "node_args": "--harmony",

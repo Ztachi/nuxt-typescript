@@ -1,8 +1,8 @@
 # 项目
-朴新在线PC学生端官网
+nuxt服务器端渲染基础架构
 
 # 描述
-朴新在线PC学生端官网服务器端渲染版本。以nuxt为前端基本框架，elementUI为UI框架。koa为服务器端框架，pm2进程守护，脚本由typescript(javascript超集)编写。
+以nuxt为前端基本框架，elementUI为UI框架。koa为服务器端框架，pm2进程守护，（客户端）脚本由typescript(javascript超集)编写。
 
 # 安装
 1. 安装nodejs。（推荐安装nodejs **[12.16.1](https://nodejs.org/download/release/v12.16.1/)** 版本。推荐使用 **[nvm](https://github.com/nvm-sh/nvm)** 安装管理多个nodejs版本）
