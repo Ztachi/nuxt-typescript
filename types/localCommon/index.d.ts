@@ -3,18 +3,18 @@
  * @Date: 2020-03-25 17:18:47 
  * @Description: 通用的接口定义
  * @Last Modified by: 詹真琦(legendryztachi@gmail.com)
- * @Last Modified time: 2020-03-26 11:21:19
+ * @Last Modified time: 2020-03-30 14:42:22
  */
 import { Store } from "Vuex";
 import { AxiosInstance } from "axios";
 import { ComponentOptions } from "vue";
 import { route } from "vue-router";
-export interface anyObject {
+interface AnyObject {
     [propName: string]: any;
 }
 
 //nuxt上下文对象
-export interface Ctx {
+interface Ctx {
     app: ComponentOptions,//包含所有插件的 Vue 根实例。例如：在使用 axios 的时候，你想获取 $axios 可以直接通过 context.app.$axios 来获取
     isClient?: Boolean,//是否来自客户端渲染（废弃。请使用 process.client ）
     isServer?: Boolean,//是否来自服务端渲染（废弃。请使用 process.server ）
@@ -34,6 +34,8 @@ export interface Ctx {
     beforeNuxtRender?: Function,//服务端 使用此方法更新 __NUXT__ 在客户端呈现的变量，fn 调用 (可以是异步) { Components, nuxtState }
 }
 
-export interface AsyncData extends Ctx {
+interface AsyncData extends Ctx {
     $axios: AxiosInstance
 }
+
+export { AnyObject, Ctx, AsyncData };
