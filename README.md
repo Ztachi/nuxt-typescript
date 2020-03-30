@@ -54,8 +54,8 @@ nuxt服务器端渲染基础架构
 # 目录介绍
 - **assets**: 存放开发过程中使用的静态资源
 - **components**: vue组件目录
-- **declare**: 全局声明目录
-- **interface**: 存放接口目录
+- **globalDeclare**: 全局声明目录
+- **types**: 存放自定义声明文件目录
 - **layouts**: 页面基础布局目录
 - **libs**: 存放自定义库的目录
 - **logs**: 存放日志的目录

@@ -27,7 +27,7 @@
 <script lang="ts">
     import {
         AsyncData
-    } from "@/interface/common";
+    } from "localCommon";
     import {
         Component,
         Vue,
